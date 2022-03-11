@@ -1,0 +1,66 @@
+<!-- 
+  @author: ajddev
+  @name: BTCBRL.COM
+  @description: Brasilian Real vs. Satoshi (Historical Performance)
+
+  index.html
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>sats</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <center>
+          <h3>
+            1 Real atualmente vale
+            <span class="current">????</span> sats
+          </h3>
+        </center>
+
+        <table class="u-full-width" align="center">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Preço</th>
+              <th>Percentual de mudança</th>
+            </tr>
+          </thead>
+          <tbody id="dataTable"></tbody>
+        </table>
+      </div>
+      <p align="center" style="font-size: 10px">
+        última taxa de câmbio da
+        <a href="https://coingecko.com/">coingecko</a> - taxas de câmbio
+        históricas da <a href="https://coindesk.com/">coindesk</a>
+      </p>
+
+      <div id="chartContainer">
+        <div id="chart">
+          <div id="message">
+            gráfico carregando, por favor espere alguns segundos...
+          </div>
+        </div>
+      </div>
+
+      <p align="center" style="font-size: 10px">
+        inspirado por <a href="https://usdsat.com/">usdsat.com</a> - feito com ♡
+        por <a href="https://twitter.com/ajddev">ajddev</a>
+      </p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
